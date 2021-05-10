@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=production node index.js",
-    "dev": "cross-env NODE_ENV=development nodemon index.js",
-    "test": "cross-env NODE_ENV=test jest --verbose --runInBand"
+    "dev": "cross-env NODE_ENV=development nodemon index.js"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +14,8 @@
     "apollo-server": "^2.24.0",
     "axios": "^0.21.1",
     "graphql": "^15.5.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   }
 }
