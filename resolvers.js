@@ -7,7 +7,7 @@ const resolvers = {
         const { data } = await axios.get(
           'https://api.coindesk.com/v1/bpi/currentprice.json'
         );
-        const btcUSD = parseFloat(data.bpi.USD.rate.replace(',', ''));
+        const btcUSD = data.bpi.USD.rate_float;
 
         if (args.type === 'sell') {
           const sellMargin = btcUSD - (args.margin / 100) * btcUSD;
