@@ -7,7 +7,7 @@ const typeDefs = gql`
   }
 
   type Query {
-    calculatePrice(type: BuySell, margin: Float!, exchangeRate: Float!): Float!
+    calculatePrice(type: BuySell!, margin: Float!, exchangeRate: Float!): Float!
   }
 `;
 
